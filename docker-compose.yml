@@ -3,6 +3,7 @@ services:
     image: clickhouse/clickhouse-server
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
+      - CLICKHOUSE_PASSWORD=changeme
     ports:
       - '8123:8123'
     volumes:

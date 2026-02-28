@@ -7,7 +7,8 @@ RUN apt update \
 	&& n latest \
 	&& hash -r
 
-RUN git clone --recurse-submodules https://github.com/ioncreature/nest-clickhouse.git \
+# RUN git clone --recurse-submodules https://github.com/ioncreature/nest-clickhouse.git \
+RUN git clone --recurse-submodules https://github.com/alexeyhimself/nest-clickhouse.git \
 	&& cd nest-clickhouse \
 	&& cp .env.example .env \
 	&& npm i
