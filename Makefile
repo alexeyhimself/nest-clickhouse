@@ -4,10 +4,10 @@ install:
 	npm i
 
 up:
-	docker-compose -f docker-compose.yml up -d
+	docker compose -f docker-compose.yml up -d
 
 down:
-	docker-compose down --remove-orphans
+	docker compose down --remove-orphans
 
 audit:
 	npm audit --audit-level=critical
